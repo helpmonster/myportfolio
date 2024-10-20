@@ -1,0 +1,321 @@
+body{
+  padding: 0;
+  margin:0;
+ 
+  /* background-position:  ; */
+  
+}
+iframe {
+  display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100vh;
+  background: hsl(0, 0%,87%);
+}
+.nav-cont{
+  background: white;
+  border: 1px solid black;
+}
+.nav-cont nav{
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+
+}
+.nav-cont nav ul{
+  display: flex;
+  list-style: none;
+  padding: 15px 40px;
+}
+.nav-cont nav ul a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  padding:10px 30px;
+  border: 1px solid black;
+  background: white;
+}
+
+.logo{
+  margin-right: auto;
+  color: blue;
+  border: 1px solid black;
+}
+.intro{
+  color: black;
+  padding-left: 50px;
+  width: 450px;
+  background: transparent;
+  position: absolute;
+  bottom: 5%;
+margin: 50px;
+border: 1px solid black;
+}
+.intro h2::after{
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  top: 90%;
+  left: 0;
+  background: yellow;
+  z-index: -10;
+}
+.intro::before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0%;
+  left: 0;
+  border-radius:50% ;
+  background: yellowgreen;
+}
+
+
+
+.intro h1{
+  font-weight: 900;
+  font-family:  sans-serif;
+  font-size: 6rem;
+  line-height: 90px;
+}
+.intro h2{
+  font-family: monospace;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 30%);
+}
+.me {
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  right: 100px;
+
+  /* mix-blend-mode: ; */
+  filter: grayscale(1.2);
+}
+section{
+  height: 100vh;
+
+}
+.about{
+  display: flex;
+  border: 1px solid black;
+
+}
+.about img{
+  width: 200px;
+  border: 1px solid black;
+}
+.about-card{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  border: 1px solid black;
+  width: calc(70%/2);
+}
+.know-more{
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  background: #000;
+  border: 2px solid white;
+}
+
+.project-card{
+  /* flex-shrink: 100px; */
+  padding: 20px;
+  border: 1px solid grey;
+  box-shadow: 6px 5px 20px grey;
+  display: flex;
+  flex-direction:column ;
+  border: 1px solid black;
+  height: 50%;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card img{
+  height: 200px;
+  max-width: 200px;
+ 
+}
+.project-container{
+  display: flex;
+  flex-shrink: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card:hover{
+
+  flex: 2;
+  scale: 1;
+  
+}
+
+
+/* calc */
+.calculator{
+  width: 100%;
+ display: grid;
+ place-content: center;
+ margin-top: 5%;
+}
+.container{
+  width: 300px;
+  height: 450px;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 4px 3px 3px 4px grey;
+}
+.calc-btn{
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  padding-left: 10px;
+}
+.calc-btn button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 20%);
+  border: none;
+  margin-bottom:6px ;
+  color: white;
+  font-size: 1.5rem;
+}
+.calc-btn button:hover{
+  background: hsl(0, 0%, 30%);
+
+}
+
+.calc-btn button:active{
+  background: hsl(0, 0%, 40%);
+
+}
+.calc-btn #orange{
+background: hsl(16, 90%, 50%);
+}
+
+
+#calcc{
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  padding-left: 5px;
+}
+/* game css */
+.dice-image1, .dice-image2{
+  width: 150px;
+  height: 150px;
+  /* border: 2px solid black; */
+  filter:drop-shadow(1px 1px 6px blue) ;
+}
+.game-container{
+  padding: 0px 20px;
+  border: 2px solid black;
+}
+.game-container h1{
+  text-align: center;
+  padding: 30px;
+}
+.game-container input{
+  
+  width: 60%;
+  border: none;
+  border-bottom:2px solid black ;
+  height: 30px;
+
+}
+.game-container input:focus{
+outline: none;
+}
+.game-container p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  padding:  20px 10px;
+}
+.game-container .roll{
+  font-weight: 700;
+  padding: 5px 50px;
+  font-size: 1.2rem;
+  margin: 30px 0px;
+  background: #000;
+  color: whitesmoke;
+
+}
+.game-container button:hover {
+  /* font-weight: 700;
+  padding: 5px 50px;
+  font-size: 1.2rem;
+  margin: 30px 0px; */
+  color: #000;
+  background: whitesmoke;
+
+}
+.game-cover{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.gamecard1, .gamecard2{
+  border: 2px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+    max-width: 400px;
+}
+#go{
+  position: absolute;
+  top: 25%;left: 36%;
+  width: 20px;
+  font-weight: 900;
+  background: #000;
+  color: white;
+  padding: none;
+}
+/* api style */
+.api-cont{
+  border: 2px solid black;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.api-cover{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.api-cont input{
+  width: 200px;
+  padding: 4px 0;
+  margin: 20px 0;
+
+}
+.api-cont p{
+  margin: 10px 0;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+.api-cont button{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  padding: 5px 50px;
+  margin-top: 20px;
+}
